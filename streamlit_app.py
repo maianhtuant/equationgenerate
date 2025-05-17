@@ -20,7 +20,7 @@ if st.button("Fit Curve"):
         else:
             coeffs = np.polyfit(x, y, deg=degree)
             poly_func = np.poly1d(coeffs)
-            print(coeffs)
+            st.markdown(f"Original Equation{coeffs}")
             # Display polynomial equation
             equation = "y = " + " + ".join([f"{c:.2f}x^{i}" if i > 0 else f"{c:.2f}"
                                              for i, c in enumerate(coeffs[::-1])][::-1])
