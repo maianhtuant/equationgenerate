@@ -6,8 +6,8 @@ st.title("Polynomial Curve Fitting Web App")
 st.write("Input your x and y values and choose the degree of the polynomial to fit a curve.")
 
 # Input fields
-x_input = st.text_input("Enter x values (comma-separated):", "1, 4, 8, 12")
-y_input = st.text_input("Enter y values (comma-separated):", "3000, 4500, 500, 5000")
+x_input = st.text_input("Enter x values (comma-separated):", "0, 4, 8, 12")
+y_input = st.text_input("Enter y values (comma-separated):", "3000, 4500, 500, 6000")
 degree = st.number_input("Degree of polynomial:", min_value=1, max_value=10, value=3)
 
 if st.button("Fit Curve"):
